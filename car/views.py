@@ -13,7 +13,7 @@ def home(request):
 class CartypeCreationView(CreateView):
     form_class = CartypeCreationForm
     model = Cartype
-    template_name = 'car/cartypecreation.html'
+    template_name = 'car/cartypecreate.html'
     success_url = '/car/list_cartype/'
     
     
@@ -33,7 +33,7 @@ class CartypeListView(ListView):
 class CartypeUpdateView(UpdateView):
     model = Cartype
     form_class = CartypeCreationForm
-    template_name = 'car/cartypecreation.html'
+    template_name = 'car/cartypecreate.html'
     success_url = '/car/list_cartype/'
     
 # class CartypeDetailView(DetailView):
@@ -165,3 +165,144 @@ class CarDeleteView(DeleteView):
         return self.delete(request, *args, **kwargs)
     
     success_url = '/car/list_car/'
+
+class FuelCreationView(CreateView):
+    form_class = FuelCreationForm
+    model = Fuel
+    template_name = 'car/fuelcreate.html'
+    success_url = '/car/list_fuel/'
+    
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
+
+class FuelListView(ListView):
+    model = Fuel
+    template_name = 'car/fuel_list.html'
+    context_object_name = 'fuel_list'
+    
+    def get_queryset(self):
+        return super().get_queryset()    
+    
+
+class FuelUpdateView(UpdateView):
+    model = Fuel
+    form_class = FuelCreationForm
+    template_name = 'car/fuelcreate.html'
+    success_url = '/car/list_fuel/'
+    
+
+      
+class FuelDeleteView(DeleteView):
+    model = Fuel
+    def get(self, request, *args, **kwargs):
+        return self.delete(request, *args, **kwargs)
+    
+    success_url = '/car/list_fuel/'
+
+
+class BrandCreationView(CreateView):
+    form_class = BrandCreationForm
+    model = Brand
+    template_name = 'car/brandcreate.html'
+    success_url = '/car/list_brand/'
+    
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
+
+class BrandListView(ListView):
+    model = Brand
+    template_name = 'car/brand_list.html'
+    context_object_name = 'brand_list'
+    
+    def get_queryset(self):
+        return super().get_queryset()    
+    
+
+class BrandUpdateView(UpdateView):
+    model = Brand
+    form_class = BrandCreationForm
+    template_name = 'car/brandcreate.html'
+    success_url = '/car/list_brand/'
+    
+
+      
+class BrandDeleteView(DeleteView):
+    model = Brand
+    def get(self, request, *args, **kwargs):
+        return self.delete(request, *args, **kwargs)
+    
+    success_url = '/car/list_brand/'
+
+class ExteriorCreationView(CreateView):
+    form_class = ExteriorCreationForm
+    model = Exterior
+    template_name = 'car/exteriorcreate.html'
+    success_url = '/car/list_exterior/'
+    
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
+
+class ExteriorListView(ListView):
+    model = Exterior
+    template_name = 'car/exterior_list.html'
+    context_object_name = 'exterior_list'
+    
+    def get_queryset(self):
+        return super().get_queryset()    
+    
+
+class ExteriorUpdateView(UpdateView):
+    model = Exterior
+    form_class = ExteriorCreationForm
+    template_name = 'car/exteriorcreate.html'
+    success_url = '/car/list_exterior/'
+    
+
+      
+class ExteriorDeleteView(DeleteView):
+    model = Exterior
+    def get(self, request, *args, **kwargs):
+        return self.delete(request, *args, **kwargs)
+    
+    success_url = '/car/list_exterior/'
+
+class ComfortCreationView(CreateView):
+    form_class = ComfortCreationForm
+    model = Comfort
+    template_name = 'car/comfortcreate.html'
+    success_url = '/car/list_comfort/'
+    
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
+
+class ComfortListView(ListView):
+    model = Comfort
+    template_name = 'car/comfort_list.html'
+    context_object_name = 'comfort_list'
+    
+    def get_queryset(self):
+        return super().get_queryset()    
+    
+
+class ComfortUpdateView(UpdateView):
+    model = Comfort
+    form_class = ComfortCreationForm
+    template_name = 'car/comfortcreate.html'
+    success_url = '/car/list_comfort/'
+    
+
+      
+class ComfortDeleteView(DeleteView):
+    model = Comfort
+    def get(self, request, *args, **kwargs):
+        return self.delete(request, *args, **kwargs)
+    
+    success_url = '/car/list_comfort/'

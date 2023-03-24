@@ -14,77 +14,83 @@
     {% block content %}
     
     <div class="card">
-        <h5 class="card-header">CREATE CAR </h5>
+        <h5 class="card-header">CREATE CAR COMFORT</h5>
          <h5 class="card-header">
-          <a href="{% url 'create_car' %}" class="btn btn-primary">Create</a>
+          <a href="{% url 'create_comfort' %}" class="btn btn-primary">Create</a>
         </h5> 
         <div class="table-responsive text-nowrap">
           <table class="table">
             <thead>
               <tr>
                 
-                <th>CARS</th>
+                <th>COMFORTS</th>
               
               </tr>
             </thead>
             <tbody class="table-border-bottom-0">
-              {% for i in car_list %}
+              {% for i in comfort_list %}
               <tr>
                 <td>
-                  <h6> name</h6>  
+                  <h6> vanitymirror</h6>  
                   <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                  <strong>{{i.name}}</strong>
+                  <strong>{{i.vanitymirror}}</strong>
                 </td>
 
                 <td>
-                    <h6> price</h6>
+                    <h6> realseatheadrest</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.price}}</strong>
+                    <strong>{{i.realseatheadrest}}</strong>
                   </td>
 
                 <td>
-                    <h6>exterior</h6>
+                    <h6>adjustableheadrest</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.exterior}}</strong>
+                    <strong>{{i.adjustableheadrest}}</strong>
                   </td>
                 <td>
-                    <h6> fuel</h6>
+                    <h6> rearseatcentrearmrest</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.fuel}}</strong>
+                    <strong>{{i.rearseatcentrearmrest}}</strong>
                   </td>
 
                   <td>
-                    <h6> brand</h6>
+                    <h6>  heightadjustablefrontseatbelts</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.brand}}</strong>
+                    <strong>{{i.heightadjustablefrontseatbelts}}</strong>
                   </td>
 
                   <td>
-                    <h6> car varient</h6>
+                    <h6>  rearACVents</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.carvarient}}</strong>
+                    <strong>{{i.rearACVents}}</strong>
                   </td>
 
                   <td>
-                    <h6> cartypetype</h6>
+                    <h6> seatLumbarSupport</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.cartype}}</strong>
+                    <strong>{{i.seatLumbarSupport}}</strong>
                   </td>
 
                   <td>
-                    <h6> comfort</h6>
+                    <h6> multifunctionSteeringWheel</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.comfort}}</strong>
+                    <strong>{{i.multifunctionSteeringWheel}}</strong>
+                  </td>
+
+                  <td>
+                    <h6> cruiseControl </h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.cruiseControl}}</strong>
                   </td>
                 
                 <!-- <td><span class="badge bg-label-primary me-1">Active</span></td> -->
                 <td>
                   
                   <div class="dropdown">
-                      <a class="dropdown-item" href="{% url 'update_car' i.id %}"
+                      <a class="dropdown-item" href="{% url 'update_comfort' i.id %}"
                         ><i class="bx bx-edit-alt me-1"></i> update</a
                       >
-                      <a class="dropdown-item" href="{% url 'delete_car' i.id %}"
+                      <a class="dropdown-item" href="{% url 'delete_comfort' i.id %}"
                         ><i class="bx bx-trash me-1"></i> Delete</a
                       >
                       
