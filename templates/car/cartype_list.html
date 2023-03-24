@@ -1,0 +1,62 @@
+{% extends './Base.html' %} {% load crispy_forms_tags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block content %}
+    
+    <div class="card">
+        <h5 class="card-header">CREATE CAR TYPE</h5>
+         <h5 class="card-header">
+          <a href="{% url 'create_cartype' %}" class="btn btn-primary">Create</a>
+        </h5> 
+        <div class="table-responsive text-nowrap">
+          <table class="table">
+            <thead>
+              <tr>
+                
+                <th>CARTYPES</th>
+              
+              </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+              {% for i in cartype_list %}
+              <tr>
+                <td>
+                  <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                  <strong>{{i.name}}</strong>
+                </td>
+                
+                <!-- <td><span class="badge bg-label-primary me-1">Active</span></td> -->
+                <td>
+                  
+                  <div class="dropdown">
+                      <a class="dropdown-item" href="{% url 'update_cartype' i.id %}"
+                        ><i class="bx bx-edit-alt me-1"></i> update</a
+                      >
+                      <a class="dropdown-item" href="{% url 'delete_cartype' i.id %}"
+                        ><i class="bx bx-trash me-1"></i> Delete</a
+                      >
+                      
+                    
+                  </div>
+                </td>
+              </tr>
+  
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% endblock content %}
+        
+</body>
+</html>

@@ -1,0 +1,104 @@
+{% extends './Base.html' %} {% load crispy_forms_tags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block content %}
+    
+    <div class="card">
+        <h5 class="card-header">CREATE CAR ENGINE</h5>
+         <h5 class="card-header">
+          <a href="{% url 'create_carengine' %}" class="btn btn-primary">Create</a>
+        </h5> 
+        <div class="table-responsive text-nowrap">
+          <table class="table">
+            <thead>
+              <tr>
+                
+                <th>CARENGINES</th>
+              
+              </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+              {% for i in carengine_list %}
+              <tr>
+                <td>
+                  <h6> enginetype</h6>  
+                  <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                  <strong>{{i.enginetype}}</strong>
+                </td>
+
+                <td>
+                    <h6> enginedisplacement</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.enginedisplacement}}</strong>
+                  </td>
+
+                <td>
+                    <h6> No of cyclinder</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.noofcylinder}}</strong>
+                  </td>
+                <td>
+                    <h6> maxpower</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.maxpower}}</strong>
+                  </td>
+
+                  <td>
+                    <h6> torque</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.torque}}</strong>
+                  </td>
+
+                  <td>
+                    <h6> tansmissiontype</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.transmissiontype}}</strong>
+                  </td>
+
+                  <td>
+                    <h6> drivetype</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.drivetype}}</strong>
+                  </td>
+
+                  <td>
+                    <h6> cluchtype</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.cluchtype}}</strong>
+                  </td>
+                
+                <!-- <td><span class="badge bg-label-primary me-1">Active</span></td> -->
+                <td>
+                  
+                  <div class="dropdown">
+                      <a class="dropdown-item" href="{% url 'update_carengine' i.id %}"
+                        ><i class="bx bx-edit-alt me-1"></i> update</a
+                      >
+                      <a class="dropdown-item" href="{% url 'delete_carengine' i.id %}"
+                        ><i class="bx bx-trash me-1"></i> Delete</a
+                      >
+                      
+                    
+                  </div>
+                </td>
+              </tr>
+  
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% endblock content %}
+        
+</body>
+</html>
