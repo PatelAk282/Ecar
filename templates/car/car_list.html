@@ -31,15 +31,31 @@
               {% for i in car_list %}
               <tr>
                 <td>
-                  <h6> name</h6>  
+                <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                <img class="w-px-200 h-auto rounded-circle" height="200" width="200" src={{i.image.url}}>
+              </td>
+                <td>
+                         <h6>name</h6>  
                   <i class="fab fa-angular fa-lg text-danger me-3"></i>
                   <strong>{{i.name}}</strong>
                 </td>
 
                 <td>
-                    <h6> price</h6>
+                  <h6>brand</h6>
+                  <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                  <strong>{{i.brand}}</strong>
+                </td>
+
+                <td>
+                    <h6>price</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
                     <strong>{{i.price}}</strong>
+                  </td>
+
+                  <td>
+                    <h6>cartype</h6>
+                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                    <strong>{{i.cartype}}</strong>
                   </td>
 
                 <td>
@@ -48,31 +64,20 @@
                     <strong>{{i.exterior}}</strong>
                   </td>
                 <td>
-                    <h6> fuel</h6>
+                    <h6>fuel</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
                     <strong>{{i.fuel}}</strong>
                   </td>
 
                   <td>
-                    <h6> brand</h6>
-                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.brand}}</strong>
-                  </td>
-
-                  <td>
-                    <h6> car varient</h6>
+                    <h6>car varient</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
                     <strong>{{i.carvarient}}</strong>
                   </td>
 
+              
                   <td>
-                    <h6> cartypetype</h6>
-                    <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                    <strong>{{i.cartype}}</strong>
-                  </td>
-
-                  <td>
-                    <h6> comfort</h6>
+                    <h6>comfort</h6>
                     <i class="fab fa-angular fa-lg text-danger me-3"></i>
                     <strong>{{i.comfort}}</strong>
                   </td>
@@ -99,6 +104,5 @@
         </div>
       </div>
     {% endblock content %}
-        
 </body>
 </html>

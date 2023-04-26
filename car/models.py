@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 
 class Cartype(models.Model):
@@ -99,13 +98,11 @@ class Car(models.Model):
     carvarient = models.ForeignKey(Carvarient,on_delete=models.CASCADE)
     cartype = models.ForeignKey(Cartype,on_delete=models.CASCADE)
     comfort = models.ForeignKey(Comfort,on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='image/',null=True,blank=True)
 
     class Meta:
         db_table = 'car'
 
     def __str__(self):
         return self.name
-
-
-
     

@@ -1,0 +1,344 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Car Dealer<em> Website</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cars.html" class="active">Cars</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="blog.html">Blog</a>
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li> 
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Our <em>Cars</em></h2>
+                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Fleet Starts ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <br>
+            <br>
+            <div class="contact-form">
+                <form action="#" id="contact">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Used/New:</label>
+                     
+                                 <select>
+                                      <option value="">All</option>
+                                      <option value="new">New vehicle</option>
+                                      <option value="used">Used vehicle</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Vehicle Type:</label>
+                     
+                                 <select>
+                                      <option value="">--All --</option>
+                                      <option value="">--All --</option>
+                                      <option value="">--All --</option>
+                                      <option value="">--All --</option>
+                                      <option value="">--All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Make:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Model:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Price:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Mileage:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Engine size:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Power:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Fuel:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Gearbox:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Doors:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Number of seats:</label>
+                     
+                                 <select>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                      <option value="">-- All --</option>
+                                 </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 offset-sm-4">
+                      <div class="main-button text-center">
+                          <a href="#">Search</a>
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+                <div class="row mx-auto">
+                    
+                        {% for i in car %}
+                       
+                        
+
+                        <div class="card mx-auto" style="width: 20rem;">
+                            <img src="{{i.image.url}}" class="card-img-top" alt="Car Not Found">
+                            <div class="card-body">
+                              <h5 class="card-title">NAME :{{i.exterior__wheel}}</h5>
+                              <h4>PRICE :{{i.price}}</h4>
+                              <a href="#" class="btn btn-primary">Show Details</a>
+                            </div>
+                          </div>
+                        {% endfor %}
+
+                </div>
+            
+                
+                
+            </div>
+
+            <br>
+                
+            <!-- <nav>
+              <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> -->
+
+        </div>
+    </section>
+    <!-- ***** Fleet Ends ***** -->
+
+    
+
+     <!-- jQuery -->
+     <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+
+     <!-- Bootstrap -->
+     <script src="{% static 'js/popper.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ 
+     <!-- Plugins -->
+     <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+     <script src="{% static 'js/waypoints.min.js' %}"></script>
+     <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+     <script src="{% static 'js/imgfix.min.js' %}"></script> 
+     <script src="{% static 'js/mixitup.js' %}"></script> 
+     <script src="{% static 'js/accordions.js' %}"></script>
+     
+     <!-- Global Init -->
+     <script src="{% static 'js/custom.js ' %}"></script>
+ 
+
+  </body>
+</html>

@@ -119,7 +119,7 @@
                 </svg>
               </span>
               <span class="app-brand-text demo menu-text fw-bolder ms-2"
-                >Sneat</span
+                >E-CAR</span
               >
             </a>
 
@@ -136,13 +136,73 @@
           <ul class="menu-inner py-1 ps ps--active-y">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href="{% url 'admindashboard' %}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
-            <!-- Layouts -->
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Components</span>
+            </li>
+            <!-- Cars -->
+            <li class="menu-item">
+              <a href="{% url 'cartype_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">CAR TYPE</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'carvarient_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">CAR VARIENT</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'carengine_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">CAR ENGINE</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'fuel_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">FUEL</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'brand_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">BRAND</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'exterior_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">EXTERIOR</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'comfort_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">COMFORT</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="{% url 'car_list' %}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">CAR</div>
+              </a>
+            </li>
+
+            {% comment %} <!-- Layouts -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
@@ -487,7 +547,7 @@
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Documentation">Documentation</div>
               </a>
-            </li>
+            </li> {% endcomment %}
             <div class="ps__rail-x" style="left: 0px; bottom: 0px">
               <div
                 class="ps__thumb-x"
